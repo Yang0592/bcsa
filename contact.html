@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us – Better Care SA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Contact Better Care SA to discuss NDIS or aged care supports in South Australia."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="container top-bar-inner">
+        <span>NDIS & aged care support in South Australia</span>
+        <a href="tel:+61-4xx-xxx-xxx" class="top-bar-phone">
+          Call us: 04xx xxx xxx
+        </a>
+      </div>
+    </div>
+
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="img/logo-tree-white.png" alt="Better Care SA logo" />
+        <span class="logo-text">Better Care SA</span>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="work-with-us.html">Work with Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn-primary nav-cta">Get in touch</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Open navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-soft">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>
+          Would you like to commence your journey with Better Care SA or do you
+          have questions about our services? We’re here to help.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container contact-grid">
+        <div>
+          <h2>Let’s Start a Conversation</h2>
+          <p>
+            Share a few details and our team will contact you to talk about your
+            situation and the supports you’re looking for.
+          </p>
+
+          <div class="contact-details">
+            <p><strong>Phone:</strong> 04xx xxx xxx</p>
+            <p><strong>Email:</strong> info@bettercaresa.com</p>
+            <p><strong>Location:</strong> Adelaide, South Australia</p>
+          </div>
+
+          <p class="contact-note">
+            If you need an interpreter or would like information in a different
+            format, please let us know in your message.
+          </p>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-row">
+            <label for="enquiry-type">Enquiry type</label>
+            <select id="enquiry-type">
+              <option value="general">General enquiry</option>
+              <option value="participant">I am an NDIS participant / older person</option>
+              <option value="representative">I am a family member / representative</option>
+              <option value="referral">Support coordinator / professional referral</option>
+              <option value="job">Join the team</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="name">Name*</label>
+            <input id="name" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email*</label>
+            <input id="email" type="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" />
+          </div>
+
+          <div class="form-row">
+            <label for="message">How can we help?*</label>
+            <textarea id="message" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary btn-full">
+            Submit enquiry
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <!-- 复制首页 footer -->
+  </footer>
+</body>
+</html>
