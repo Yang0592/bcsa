@@ -52,7 +52,6 @@ a {
   background: linear-gradient(135deg, #0d6e8c, #6bc3d6);
   color: #ffffff;
   position: relative;
-  overflow: hidden;
 }
 
 .nav-container {
@@ -97,13 +96,9 @@ a {
   margin-left: 6px;
 }
 
-/* mobile nav button (无 JS 也不影响) */
+/* 小汉堡按钮现在不用了，先保持隐藏 */
 .nav-toggle {
   display: none;
-  background: none;
-  border: none;
-  font-size: 1.4rem;
-  color: #ffffff;
 }
 
 /* ========== Buttons ========== */
@@ -519,66 +514,8 @@ a {
     flex-direction: column;
     align-items: flex-start;
   }
-}
 
-/* ========== Responsive ========== */
-@media (max-width: 960px) {
-  .hero-inner,
-  .two-col,
-  .three-cards,
-  .services-grid,
-  .contact-grid,
-  .footer-grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .hero {
-    padding-top: 32px;
-  }
-
-  .hero-inner {
-    gap: 28px;
-  }
-
-  .hero-image {
-    order: -1;
-  }
-
-  .cta-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-/* ========== Responsive ========== */
-@media (max-width: 960px) {
-  .hero-inner,
-  .two-col,
-  .three-cards,
-  .services-grid,
-  .contact-grid,
-  .footer-grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .hero {
-    padding-top: 32px;
-  }
-
-  .hero-inner {
-    gap: 28px;
-  }
-
-  .hero-image {
-    order: -1;
-  }
-
-  .cta-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  /* 关键：让导航容器可以换行，菜单在 logo 下面一行显示 */
+  /* 关键：让导航上下排 */
   .nav-container {
     flex-direction: column;
     align-items: flex-start;
@@ -597,7 +534,6 @@ a {
   }
 }
 
-/* 小屏幕可以稍微收紧一下内边距 */
 @media (max-width: 600px) {
   .section {
     padding: 44px 0;
