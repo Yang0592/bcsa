@@ -568,9 +568,6 @@ a {
   }
 
   /* 超小屏：隐藏文字 logo，只留小树，给菜单腾空间 */
-  .logo-text {
-    display: none;
-  }
 
   .logo img {
     width: 32px;
