@@ -71,36 +71,42 @@
           </p>
         </div>
 
-        <form class="contact-form">
+        <!-- 简易 mailto 表单版本 -->
+        <form
+          class="contact-form"
+          action="mailto:info@bettercaresa.com"
+          method="POST"
+          enctype="text/plain"
+        >
           <div class="form-row">
             <label for="enquiry-type">Enquiry type</label>
-            <select id="enquiry-type">
-              <option value="general">General enquiry</option>
-              <option value="participant">I am an NDIS participant / older person</option>
-              <option value="representative">I am a family member / representative</option>
-              <option value="referral">Support coordinator / professional referral</option>
-              <option value="job">Join the team</option>
+            <select id="enquiry-type" name="Enquiry type">
+              <option value="General enquiry">General enquiry</option>
+              <option value="NDIS participant / older person">I am an NDIS participant / older person</option>
+              <option value="Family / representative">I am a family member / representative</option>
+              <option value="Support coordinator / professional referral">Support coordinator / professional referral</option>
+              <option value="Join the team">Join the team</option>
             </select>
           </div>
 
           <div class="form-row">
             <label for="name">Name*</label>
-            <input id="name" type="text" required />
+            <input id="name" name="Name" type="text" required />
           </div>
 
           <div class="form-row">
             <label for="email">Email*</label>
-            <input id="email" type="email" required />
+            <input id="email" name="Email" type="email" required />
           </div>
 
           <div class="form-row">
             <label for="phone">Phone</label>
-            <input id="phone" type="tel" />
+            <input id="phone" name="Phone" type="tel" />
           </div>
 
           <div class="form-row">
             <label for="message">How can we help?*</label>
-            <textarea id="message" rows="4" required></textarea>
+            <textarea id="message" name="Message" rows="4" required></textarea>
           </div>
 
           <button type="submit" class="btn-primary btn-full">
