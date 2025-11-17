@@ -515,18 +515,20 @@ a {
     align-items: flex-start;
   }
 
-  /* 导航上下排，避免被挤出屏幕 */
+  /* 导航上下排：logo 在上，菜单在下 */
   .nav-container {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
   }
 
+  /* 菜单仍然横向排布，但允许换行 */
   .main-nav {
     width: 100%;
     flex-wrap: wrap;
     justify-content: flex-start;
-    row-gap: 6px;
+    column-gap: 12px;
+    row-gap: 4px;
   }
 
   .main-nav a {
@@ -534,28 +536,23 @@ a {
   }
 }
 
-/* 手机竖屏：导航强制竖着一列显示，logo 文本缩小/隐藏 */
+/* 手机竖屏：减小间距，让它更规矩地横向排、自动换行 */
 @media (max-width: 768px) {
   .nav-container {
-    align-items: stretch;
+    align-items: flex-start;
   }
 
   .main-nav {
-    display: block;
+    justify-content: flex-start;
   }
 
   .main-nav a {
-    display: block;
-    padding: 8px 4px;
-  }
-
-  .main-nav .nav-cta {
+    padding: 4px 0;
     display: inline-flex;
-    margin-top: 6px;
   }
 
-  .logo-text {
-    font-size: 0.9rem;
+  .nav-cta {
+    margin-left: 0;
   }
 }
 
@@ -570,7 +567,7 @@ a {
     gap: 4px;
   }
 
-  /* 超小屏：只留树，隐藏文字 logo 给菜单让位置 */
+  /* 超小屏：隐藏文字 logo，只留小树，给菜单腾空间 */
   .logo-text {
     display: none;
   }
