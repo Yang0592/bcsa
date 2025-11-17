@@ -521,40 +521,91 @@ a {
   }
 }
 
-@media (max-width: 768px) {
-  .nav-toggle {
-    display: block;
+/* ========== Responsive ========== */
+@media (max-width: 960px) {
+  .hero-inner,
+  .two-col,
+  .three-cards,
+  .services-grid,
+  .contact-grid,
+  .footer-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero {
+    padding-top: 32px;
+  }
+
+  .hero-inner {
+    gap: 28px;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .cta-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 960px) {
+  .hero-inner,
+  .two-col,
+  .three-cards,
+  .services-grid,
+  .contact-grid,
+  .footer-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero {
+    padding-top: 32px;
+  }
+
+  .hero-inner {
+    gap: 28px;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .cta-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* 关键：让导航容器可以换行，菜单在 logo 下面一行显示 */
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
 
   .main-nav {
-    position: absolute;
-    top: 64px;
-    right: 0;
-    left: 0;
-    background: #0d6e8c;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 12px 16px;
-    gap: 8px;
-    display: none;
-    z-index: 20;
-  }
-
-  .main-nav.nav-open {
-    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 6px;
   }
 
   .main-nav a {
-    padding: 6px 4px;
+    font-size: 0.9rem;
+  }
+}
+
+/* 小屏幕可以稍微收紧一下内边距 */
+@media (max-width: 600px) {
+  .section {
+    padding: 44px 0;
   }
 
   .top-bar-inner {
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
-  }
-
-  .section {
-    padding: 44px 0;
   }
 }
