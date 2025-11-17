@@ -66,25 +66,55 @@
           </div>
 
           <p class="contact-note">
-            If you need an interpreter or would like information in a different
-            format, please let us know in your message.
+            Please avoid sharing highly sensitive medical or financial details
+            in this form. We can discuss these with you directly if needed.
           </p>
         </div>
 
-        <!-- 简易 mailto 表单版本 -->
+        <!-- ✅ Web3Forms 集成好的版本 -->
         <form
           class="contact-form"
-          action="mailto:info@bettercaresa.com"
+          action="https://api.web3forms.com/submit"
           method="POST"
-          enctype="text/plain"
         >
+          <!-- 必填：你的 Web3Forms access key（去官网拿一串，粘在这里） -->
+          <input type="hidden" name="access_key" value="0a9de8a1-6753-442f-b642-36aa761d3020" />
+
+          <!-- 可选：邮件标题、显示的发件人名称 -->
+          <input
+            type="hidden"
+            name="subject"
+            value="New enquiry from Better Care SA website"
+          />
+          <input
+            type="hidden"
+            name="from_name"
+            value="Better Care SA Website"
+          />
+
+          <!-- 可选：提交成功后跳转到的页面（你可以改成自己的 thank-you.html） -->
+          <input
+            type="hidden"
+            name="redirect"
+            value="https://bettercaresa.com/thank-you.html"
+          />
+
+          <!-- 可选：简单的防机器人字段（留空即可） -->
+          <input type="checkbox" name="botcheck" style="display:none;" />
+
           <div class="form-row">
             <label for="enquiry-type">Enquiry type</label>
             <select id="enquiry-type" name="Enquiry type">
               <option value="General enquiry">General enquiry</option>
-              <option value="NDIS participant / older person">I am an NDIS participant / older person</option>
-              <option value="Family / representative">I am a family member / representative</option>
-              <option value="Support coordinator / professional referral">Support coordinator / professional referral</option>
+              <option value="NDIS participant / older person">
+                I am an NDIS participant / older person
+              </option>
+              <option value="Family member / representative">
+                I am a family member / representative
+              </option>
+              <option value="Support coordinator / professional referral">
+                Support coordinator / professional referral
+              </option>
               <option value="Join the team">Join the team</option>
             </select>
           </div>
