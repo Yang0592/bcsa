@@ -163,6 +163,37 @@
   <footer class="site-footer">
     <!-- 这里直接复制你首页的 footer 即可 -->
   </footer>
-  <script src="main.js"></script>
+
+  <!-- 内联导航脚本：先在 about.html 上验证手机菜单 -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const header = document.querySelector('.site-header');
+      if (!header) return;
+
+      const navToggle = header.querySelector('.nav-toggle');
+      const nav = header.querySelector('.main-nav');
+
+      if (!navToggle || !nav) return;
+
+      // 点击 ☰ 展开/收起导航
+      navToggle.addEventListener('click', function () {
+        nav.classList.toggle('nav-open');
+      });
+
+      // 点击菜单链接后，自动收起菜单
+      nav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          nav.classList.remove('nav-open');
+        });
+      });
+
+      // 视窗变宽时（从手机切回电脑），收起菜单避免错乱
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 768) {
+          nav.classList.remove('nav-open');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
