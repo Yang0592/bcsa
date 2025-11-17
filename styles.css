@@ -96,7 +96,7 @@ a {
   margin-left: 6px;
 }
 
-/* 小汉堡按钮现在不用了，先保持隐藏 */
+/* 小汉堡按钮先不使用，隐藏即可 */
 .nav-toggle {
   display: none;
 }
@@ -515,7 +515,7 @@ a {
     align-items: flex-start;
   }
 
-  /* 关键：让导航上下排 */
+  /* 导航上下排，避免被挤出屏幕 */
   .nav-container {
     flex-direction: column;
     align-items: flex-start;
@@ -534,7 +534,32 @@ a {
   }
 }
 
-@media (max-width: 600px) {
+/* 手机竖屏：导航强制竖着一列显示，logo 文本缩小/隐藏 */
+@media (max-width: 768px) {
+  .nav-container {
+    align-items: stretch;
+  }
+
+  .main-nav {
+    display: block;
+  }
+
+  .main-nav a {
+    display: block;
+    padding: 8px 4px;
+  }
+
+  .main-nav .nav-cta {
+    display: inline-flex;
+    margin-top: 6px;
+  }
+
+  .logo-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
   .section {
     padding: 44px 0;
   }
@@ -543,5 +568,15 @@ a {
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
+  }
+
+  /* 超小屏：只留树，隐藏文字 logo 给菜单让位置 */
+  .logo-text {
+    display: none;
+  }
+
+  .logo img {
+    width: 32px;
+    height: 32px;
   }
 }
