@@ -520,23 +520,3 @@ a {
     align-items: flex-start;
   }
 }
-
-@media (max-width: 768px) {
-  .main-nav {
-    display: none; /* 简单处理：小屏只显示 logo + menu 按钮，后面可以再加 JS 展开 */
-  }
-
-  .nav-toggle {
-    display: block;
-  }
-
-  .top-bar-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-  }
-
-  .section {
-    padding: 44px 0;
-  }
-}
