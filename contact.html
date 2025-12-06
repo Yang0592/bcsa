@@ -72,7 +72,7 @@
           </p>
         </div>
 
-        <!-- ✅ Web3Forms 集成好的版本 + 反垃圾增强 -->
+        <!-- ✅ Web3Forms + hCaptcha + 反垃圾增强 -->
         <form
           class="contact-form"
           action="https://api.web3forms.com/submit"
@@ -113,7 +113,7 @@
             autocomplete="off"
           />
 
-          <!-- 可选：简单的防机器人字段（留空即可） -->
+          <!-- ✅ Web3Forms 推荐的隐藏防机器人字段 -->
           <input type="checkbox" name="botcheck" style="display:none;" />
 
           <div class="form-row">
@@ -152,6 +152,9 @@
             <label for="message">How can we help?*</label>
             <textarea id="message" name="Message" rows="4" required></textarea>
           </div>
+
+          <!-- ✅ Step 1: 添加 hCaptcha 占位 -->
+          <div class="h-captcha" data-captcha="true"></div>
 
           <button type="submit" class="btn-primary btn-full">
             Submit enquiry
@@ -204,5 +207,8 @@
       </div>
     </div>
   </footer>
+
+  <!-- ✅ Step 2: 必需脚本（仅 hCaptcha / 高级上传等需要） -->
+  <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
