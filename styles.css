@@ -88,6 +88,24 @@ a {
   opacity: 0.9;
 }
 
+/* ========== Active nav state ========== */
+.main-nav a[aria-current="page"] {
+  opacity: 1;
+  font-weight: 700;
+  position: relative;
+}
+
+.main-nav a[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 2px;
+}
+
 .main-nav a:hover {
   opacity: 1;
 }
