@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Thank You – Better Care SA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Thank you for contacting Better Care SA. We’ve received your enquiry and will be in touch soon."
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="img/favicon64.png">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="container top-bar-inner">
+        <span>NDIS & aged care support in South Australia</span>
+        <a href="tel:+61-872-282-740" class="top-bar-phone">
+          Call us: 08 7228 2740
+        </a>
+      </div>
+    </div>
+
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="img/logo-tree-white.png" alt="Better Care SA logo" />
+        <span class="logo-text">Better Care SA</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="work-with-us.html">Work with Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn-primary nav-cta">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Thank you hero -->
+    <section class="section section-cta">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 0;">
+          <h1>Thank you for your enquiry</h1>
+          <p>
+            We’ve received your message and a member of our team will be in touch
+            soon to talk about what support might be most helpful for you or your family.
+          </p>
+        </div>
+
+        <div class="hero-actions" style="margin-top: 22px;">
+          <a href="services.html" class="btn-primary">Explore our services</a>
+          <a href="contact.html" class="btn-ghost">Send another message</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- What happens next -->
+    <section class="section section-light">
+      <div class="container two-col">
+        <div class="col">
+          <h2>What happens next</h2>
+          <ul class="tick-list">
+            <li>We review your enquiry and confirm the best way to contact you.</li>
+            <li>We’ll talk through your goals, routines and preferred support times.</li>
+            <li>We clarify your funding pathway (NDIS self-managed / plan-managed or private).</li>
+            <li>Together we plan the next steps in a calm, practical way.</li>
+          </ul>
+          <p style="margin-top: 14px;">
+            If your enquiry is time-sensitive, you’re welcome to call us directly.
+          </p>
+        </div>
+
+        <div class="col">
+          <h2>Contact details</h2>
+          <div class="card">
+            <p><strong>Phone:</strong> (08) 7228 2740</p>
+            <p><strong>Email:</strong> hello@bettercaresa.com</p>
+            <p><strong>Location:</strong> Adelaide, South Australia</p>
+          </div>
+
+          <div class="hero-badges" style="margin-top: 16px;">
+            <span>Person-centred care</span>
+            <span>Clear communication</span>
+            <span>Flexible supports</span>
+            <span>NDIS & aged care</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Small reassurance block -->
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-header">
+          <h2>You don’t need to have everything figured out</h2>
+          <p>
+            Many people reach out while they’re still exploring options.
+            We’re happy to listen, explain what’s possible, and help you plan
+            a simple, supportive way forward.
+          </p>
+        </div>
+
+        <div class="cta-actions" style="justify-content:center;">
+          <a href="index.html" class="btn-secondary">Back to home</a>
+          <a href="about.html" class="btn-secondary">Learn about our approach</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <img src="img/logo-tree-white.png" alt="Better Care SA logo" />
+            <span>Better Care SA</span>
+          </div>
+          <p class="footer-tagline">
+            Care that grows. Support that lasts.
+          </p>
+        </div>
+
+        <div>
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Our services</a></li>
+            <li><a href="work-with-us.html">Work with us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <ul>
+            <li>Phone: (08) 7228 2740</li>
+            <li>Email: hello@bettercaresa.com</li>
+            <li>Adelaide, South Australia</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="ack">
+          We acknowledge the Traditional Custodians of the lands on which we live and work,
+          and pay our respects to Elders past, present and emerging.
+        </div>
+        <div>© 2025 Better Care SA. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
